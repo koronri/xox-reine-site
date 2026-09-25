@@ -1,0 +1,25 @@
+# ─── OS / 에디터 임시파일 ───
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# ─── 캐릭터 원본 / 작업용 파일 ───
+# 사이트는 images/char1.png, images/char2.png 만 사용합니다.
+# 아래 원본 네이밍 파일(고해상도 작업본)은 저장소에 올리지 않습니다.
+images/일러스트*.png
+images/*_원본.*
+images/*_raw.*
+images/wip/
+
+# ─── 로컬 서버 / 빌드 산출물 ───
+node_modules/
+dist/
+
+# XoX 음원 원본 폴더(zip은 download/ 에만) — 원본 wav 폴더는 저장소 제외
+"XoX. d/"
+XoX. d/

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사용 규약 · 利用規約 — XoX</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-unit="02">
+<canvas id="dots" class="fx-dots"></canvas>
+
+<div id="loader">
+  <div class="lg">LOADING<b>...</b></div>
+  <div class="lbar"><i></i></div>
+</div>
+
+<nav class="nav">
+  <span class="home">Xo<b>X</b></span>
+  <span class="links">
+    <a href="index.html">우타우 1</a>
+    <a href="utau2.html">우타우 2</a>
+    <a href="notice.html" class="active">사용 규약</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="meta">SYS <span id="clock">--:--:--</span></span>
+</nav>
+
+<main class="doc">
+  <h1><span class="lang-ko">사용 규약</span><span class="lang-jp">利用規約</span> <b>/ TERMS</b></h1>
+
+  <!-- 언어 토글 (다국어 지원) -->
+  <div class="langbar">
+    <button class="langbtn active" data-lang="ko">한국어</button>
+    <button class="langbtn" data-lang="jp">日本語</button>
+  </div>
+
+  <!-- 서문 -->
+  <p class="lead">
+    <span class="lang-ko">본 약관은 이용자가 본 콘텐츠(음원 포함, 이하 "콘텐츠")를 사용함에 있어 준수해야 할 사항을 규정합니다.
+      콘텐츠를 다운로드하거나 이용함으로써, 이용자는 본 약관의 내용을 모두 이해하고 동의한 것으로 간주됩니다.</span>
+    <span class="lang-jp">本規約は、利用者が本コンテンツ（音源を含む、以下「コンテンツ」）を使用する際に遵守すべき事項を定めるものです。
+      コンテンツをダウンロードまたは利用することにより、利用者は本規約の内容を理解し、同意したものとみなされます。</span>
+  </p>
+
+  <!-- ===== 한국어 ===== -->
+  <div id="terms-ko" class="terms">
+    <article class="term">
+      <h3><span class="num">01</span> 약관의 효력 및 책임</h3>
+      <div class="clause"><span class="ci">1.1</span><span>이용자가 본 약관을 숙지하지 않아 발생하는 모든 불이익에 대하여 제작자는 어떠한 책임도 부담하지 않습니다.</span></div>
+      <div class="clause"><span class="ci">1.2</span><span>제작자는 이용자가 본 약관을 위반한다고 판단할 경우, 사전 통지 없이 콘텐츠의 사용 중단, 게시물 비공개 또는 삭제를 요청할 수 있습니다.</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">02</span> 저작권 및 재배포 제한</h3>
+      <div class="clause"><span class="ci">2.1</span><span>콘텐츠는 공식 배포처 외 재배포를 금지합니다.</span></div>
+      <div class="clause"><span class="ci">2.2</span><span>비상업적 이용 시에는 제작자명 또는 음원명을 필수적으로 표기할 필요는 없으나, <b>상업적 이용 시에는 반드시 표기</b>해야 합니다.</span></div>
+      <div class="clause"><span class="ci">2.3</span><span>콘텐츠의 저작권은 제작자에게 있으며, 이용자는 약관에서 명시한 허용 범위를 벗어난 사용을 할 수 없습니다.</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">03</span> 금지된 이용</h3>
+      <div class="clause"><span class="ci">3.1</span><span>다음과 같은 목적 또는 맥락에서의 콘텐츠 사용을 금지합니다.
+        <ul>
+          <li>종교적, 정치적, 이념적 논쟁을 유발할 수 있는 콘텐츠</li>
+          <li>특정 인물(실존 인물 포함)의 목소리 대체 또는 사칭 목적</li>
+          <li>모든 요소의 성적 콘텐츠</li>
+          <li>차별, 혐오, 모욕, 폭력적 목적의 콘텐츠</li>
+        </ul>
+      </span></div>
+      <div class="clause"><span class="ci">3.2</span><span>법령을 위반하거나 사회적으로 부적절한 행위에 콘텐츠를 사용하는 것을 금합니다.</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">04</span> 이용 허용 범위</h3>
+      <div class="clause"><span class="ci">4.1</span><span>콘텐츠는 기본적으로 <b>비상업적 이용</b>만을 허용합니다.</span></div>
+      <div class="clause"><span class="ci">4.2</span><span>상업적 이용을 원할 경우, 반드시 제작자에게 사전 문의하여 별도의 허가를 받아야 합니다.</span></div>
+      <div class="clause"><span class="ci">4.3</span><span>이용자가 상업적 이용 허가 없이 수익 목적의 활동에 콘텐츠를 사용할 경우, 이는 약관 위반으로 간주됩니다.</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">05</span> 2차 창작 및 수정</h3>
+      <div class="clause"><span class="ci">5.1</span><span>콘텐츠 사용 중 오류 또는 기능적 문제 발생 시, 원본을 훼손하지 않는 범위 내에서의 기술적 수정(2차 가공)을 허용합니다.</span></div>
+      <div class="clause"><span class="ci">5.2</span><span>허용된 범위를 넘는 편집·가공은 제작자의 승인 없이 진행할 수 없습니다.</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">06</span> 면책 조항</h3>
+      <div class="clause"><span class="ci">6.1</span><span>제작자는 콘텐츠 사용 과정에서 발생하는 직접적 또는 간접적 피해에 대해 책임을 지지 않습니다.</span></div>
+      <div class="clause"><span class="ci">6.2</span><span>이용자는 모든 사용에 대한 책임을 스스로 부담해야 하며, 제작자는 사용자 간 분쟁에 관여하지 않습니다.</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">07</span> 약관의 변경</h3>
+      <div class="clause"><span class="ci">7.1</span><span>제작자는 필요 시 약관을 변경할 수 있으며, 변경된 약관은 공식 배포처 등을 통해 공지된 시점부터 효력이 발생합니다.</span></div>
+      <div class="clause"><span class="ci">7.2</span><span>이용자는 변경 사항을 주기적으로 확인할 책임이 있으며, 변경된 약관 이후 콘텐츠를 계속 사용할 경우 변경 사항에 동의한 것으로 간주됩니다.</span></div>
+    </article>
+  </div>
+
+  <!-- ===== 日本語 ===== -->
+  <div id="terms-jp" class="terms">
+    <article class="term">
+      <h3><span class="num">01</span> 利用規約の効力および責任</h3>
+      <div class="clause"><span class="ci">1.1</span><span>利用者が本規約を熟読しなかったことにより生じるすべての不利益について、製作者は一切の責任を負いません。</span></div>
+      <div class="clause"><span class="ci">1.2</span><span>製作者は、利用者が本規約に違反したと判断した場合、事前通告なしにコンテンツの使用中断、投稿内容の非公開化または削除請求を行うことがあります。</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">02</span> 著作権および再配布の制限</h3>
+      <div class="clause"><span class="ci">2.1</span><span>コンテンツは公式配布先以外で再配布することを禁止します。</span></div>
+      <div class="clause"><span class="ci">2.2</span><span>非営利的利用の場合、製作者名または音源名の表記は必須ではありませんが、<b>営利的利用時には必ず表記</b>してください。</span></div>
+      <div class="clause"><span class="ci">2.3</span><span>コンテンツの著作権は製作者に帰属し、利用者は本規約で明示された許可範囲を超えた利用を行うことはできません。</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">03</span> 禁止される利用</h3>
+      <div class="clause"><span class="ci">3.1</span><span>以下の目的または文脈でのコンテンツ利用を禁止します。
+        <ul>
+          <li>宗教的・政治的・思想的な論争になり得るコンテンツ</li>
+          <li>特定人物（実在人物を含む）の声の代替または詐称目的</li>
+          <li>すべての要素の性的コンテンツ</li>
+          <li>差別、憎悪、侮辱、暴力的な目的のコンテンツ</li>
+        </ul>
+      </span></div>
+      <div class="clause"><span class="ci">3.2</span><span>法令に違反したり、社会的に不適切な行為にコンテンツを使用することは禁止されています。</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">04</span> 利用許可範囲</h3>
+      <div class="clause"><span class="ci">4.1</span><span>コンテンツは基本的に<b>非営利的利用</b>のみ許可されます。</span></div>
+      <div class="clause"><span class="ci">4.2</span><span>営利的な利用を希望する場合、必ず事前に製作者へ問い合わせ、別途の許可を得る必要があります。</span></div>
+      <div class="clause"><span class="ci">4.3</span><span>利用者が営利利用の許可を得ずに収益目的で利用した場合、本規約違反と見なされます。</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">05</span> 二次創作および修正</h3>
+      <div class="clause"><span class="ci">5.1</span><span>コンテンツ利用中に発生したエラーや機能的問題がある場合、原本を毀損しない範囲での技術的修正（二次加工）を許可します。</span></div>
+      <div class="clause"><span class="ci">5.2</span><span>許可範囲を超える編集・加工は、製作者の承認なしに行うことはできません。</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">06</span> 免責事項</h3>
+      <div class="clause"><span class="ci">6.1</span><span>製作者は、コンテンツ使用で生じる直接的または間接的な被害に対し責任を負いません。</span></div>
+      <div class="clause"><span class="ci">6.2</span><span>利用者はすべての利用に対する責任を自ら負い、製作者は利用者間のトラブルに関与しません。</span></div>
+    </article>
+    <article class="term">
+      <h3><span class="num">07</span> 規約の変更</h3>
+      <div class="clause"><span class="ci">7.1</span><span>製作者は必要に応じて規約を変更でき、変更後の規約は公式配布先などで告知された時点から効力を持ちます。</span></div>
+      <div class="clause"><span class="ci">7.2</span><span>利用者は変更内容を定期的に確認する責任があり、変更後もコンテンツを使用する場合、変更内容に同意したものとみなされます。</span></div>
+    </article>
+  </div>
+
+  <!-- 문의 -->
+  <div class="contact">
+    <span class="lang-ko">그 외 문의사항이 있으실 경우 트위터
+      <a href="https://x.com/qXoX999p" target="_blank" rel="noopener">@qXoX999p</a> 로 문의 주시길 바랍니다.</span>
+    <span class="lang-jp">その他の問い合わせがある場合は、X
+      <a href="https://x.com/qXoX999p" target="_blank" rel="noopener">@qXoX999p</a> までご連絡ください。</span>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="n">Xo<b>X</b></div>
+  <div class="c">TERMS OF USE · 利用規約</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

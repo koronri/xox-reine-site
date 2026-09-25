@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XoX — UTAU 01</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-unit="02">
+<canvas id="dots" class="fx-dots"></canvas>
+
+<!-- LOADING -->
+<div id="loader">
+  <div class="lg">LOADING<b>...</b></div>
+  <div class="lbar"><i></i></div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <span class="home">Xo<b>X</b></span>
+  <span class="links">
+    <a href="index.html" class="active">우타우 1</a>
+    <a href="utau2.html">우타우 2</a>
+    <a href="notice.html">사용 규약</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="meta">SYS <span id="clock">--:--:--</span></span>
+</nav>
+
+<!-- STAGE -->
+<main class="stage">
+  <!-- 이미지 교체: images/char2.png 파일만 덮어쓰면 됨 -->
+  <div class="figure" style="--char:url('images/char2.png')" data-a="images/char2.png" data-b="images/char2_nobag.png">
+    <div class="silhouette"></div>
+    <img class="char" src="images/char2.png" alt="XoX character">
+    <button class="poseswap" type="button" aria-label="가방 있음/없음 전환">
+      <span class="lang-ko">가방 전환</span><span class="lang-jp">カバン切替</span>
+    </button>
+  </div>
+
+  <section class="info">
+    <div class="langbar">
+      <button class="langbtn active" data-lang="ko">한국어</button>
+      <button class="langbtn" data-lang="jp">日本語</button>
+    </div>
+
+    <div class="eyebrow">UTAU VOICEBANK · UNIT 01</div>
+    <h1 class="title">XoX</h1>
+    <div class="subtitle"><span class="lang-ko">무뚝뚝 / 음침</span><span class="lang-jp">無愛想 / 陰気</span></div>
+    <div class="typeline" id="type" data-ko="그냥저냥 되는대로 —" data-jp="そこそこ、なるがままに —"></div>
+
+    <!-- XoX 대표영상 -->
+    <div class="tube" data-embed="https://www.youtube.com/embed/E3G_Wc2rZ9o?rel=0">
+      <span class="corner">▶ DEMO // XoX</span>
+      <span class="noise"></span>
+    </div>
+
+    <div class="stats">
+      <div class="cell"><div class="k"><span class="lang-ko">상징</span><span class="lang-jp">象徴</span></div>
+        <div class="v"><span class="lang-ko">빨간 리본 / 손도끼</span><span class="lang-jp">赤いリボン / 手斧</span></div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">취미</span><span class="lang-jp">趣味</span></div>
+        <div class="v"><span class="lang-ko">멍때리기</span><span class="lang-jp">ぼーっとすること</span></div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">음역</span><span class="lang-jp">音域</span></div><div class="v">A3 — E4</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">권장 템포</span><span class="lang-jp">推奨テンポ</span></div><div class="v">80 – 170 BPM</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">타입</span><span class="lang-jp">タイプ</span></div><div class="v">VCV / Whisper</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">컬러</span><span class="lang-jp">カラー</span></div><div class="v"><span class="sw"><i style="background:#C41A23"></i> #C41A23</span></div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">생일</span><span class="lang-jp">誕生日</span></div>
+        <div class="v"><span class="lang-ko">7월 10일</span><span class="lang-jp">7月10日</span></div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">일러스트</span><span class="lang-jp">イラスト</span></div><div class="v">koronri</div></div>
+      <div class="cell" style="grid-column:1/-1"><div class="k"><span class="lang-ko">추천 샘플러</span><span class="lang-jp">推奨サンプラー</span></div><div class="v">hifisampler / moresampler</div></div>
+    </div>
+
+    <div class="actions">
+      <a class="soc" href="https://x.com/qXoX999p" target="_blank" rel="noopener">TWITTER ↗</a>
+      <a class="soc" href="https://youtu.be/E3G_Wc2rZ9o" target="_blank" rel="noopener">YOUTUBE ↗</a>
+      <a class="dl" href="download/XoX_UTAU_jp-vcv.zip" download>DOWNLOAD</a>
+    </div>
+    <div class="fmt">
+      <span class="lang-ko"><b>음원형식</b> 일본어 VCV / 원음설정 <b>@wb4_3</b></span>
+      <span class="lang-jp"><b>音源形式</b> 日本語 VCV / 原音設定 <b>@wb4_3</b></span>
+    </div>
+    <div class="fmt note">
+      <span class="lang-ko"><b>NOTE</b> 녹음 키 C4 · 자연스러운 범위 A3~E4 · 실사용 권장 G3~G4 (보통 +5~7 반음).
+        권장 템포 80~170 BPM, 180 BPM 초과 시 발음 조교가 어려워질 수 있습니다.</span>
+      <span class="lang-jp"><b>NOTE</b> 録音キー C4 · 自然な音域 A3~E4 · 実用推奨 G3~G4（おおよそ +5~7 半音）。
+        推奨テンポ 80~170 BPM、180 BPM を超えると発音調声が難しくなる場合があります。</span>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="n">Xo<b>X</b> · UNIT_01</div>
+  <div class="c">
+    <span class="lang-ko">Illust. koronri &nbsp;/&nbsp; 원음설정 @wb4_3</span>
+    <span class="lang-jp">Illust. koronri &nbsp;/&nbsp; 原音設定 @wb4_3</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

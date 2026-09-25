@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reine 零音 レイネ — UTAU 02</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-unit="01">
+<canvas id="dots" class="fx-dots"></canvas>
+
+<div id="loader">
+  <div class="lg">LOADING<b>...</b></div>
+  <div class="lbar"><i></i></div>
+</div>
+
+<nav class="nav">
+  <span class="home">Xo<b>X</b></span>
+  <span class="links">
+    <a href="index.html">우타우 1</a>
+    <a href="utau2.html" class="active">우타우 2</a>
+    <a href="notice.html">사용 규약</a>
+  </span>
+  <span class="spacer"></span>
+  <span class="meta">SYS <span id="clock">--:--:--</span></span>
+</nav>
+
+<main class="stage">
+  <!-- 이미지 교체: images/char1.png 파일만 덮어쓰면 됨 -->
+  <div class="figure" style="--char:url('images/char1.png')" data-a="images/char1.png" data-b="images/char1_v1.png">
+    <div class="silhouette"></div>
+    <img class="char" src="images/char1.png" alt="Reine character">
+    <button class="poseswap" type="button" aria-label="모습 전환">
+      <span class="lang-ko">폼 전환</span><span class="lang-jp">フォーム</span>
+    </button>
+  </div>
+
+  <section class="info">
+    <div class="langbar">
+      <button class="langbtn active" data-lang="ko">한국어</button>
+      <button class="langbtn" data-lang="jp">日本語</button>
+    </div>
+
+    <div class="eyebrow">UTAU VOICEBANK · UNIT 02</div>
+    <h1 class="title">Reine</h1>
+    <div class="subtitle">零音 レイネ &nbsp;·&nbsp; <span class="lang-ko">관용 / 몽환</span><span class="lang-jp">寛容 / 夢幻</span></div>
+    <div class="typeline" id="type" data-ko="그냥 흘러가는 대로, 얼음처럼 —" data-jp="流れるままに、氷のように —"></div>
+
+    <!-- Reine 대표영상 -->
+    <div class="tube" data-embed="https://www.youtube.com/embed/Bl_4EvXYm4w?rel=0">
+      <span class="corner">▶ DEMO // REINE</span>
+      <span class="noise"></span>
+    </div>
+
+    <div class="stats">
+      <div class="cell"><div class="k"><span class="lang-ko">이름</span><span class="lang-jp">名前</span></div><div class="v">零音 レイネ (Reine)</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">취미</span><span class="lang-jp">趣味</span></div>
+        <div class="v"><span class="lang-ko">별 보기 / 얼음 만들기</span><span class="lang-jp">星を見ること / 氷を作ること</span></div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">음역</span><span class="lang-jp">音域</span></div><div class="v">C4 — A4</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">권장 템포</span><span class="lang-jp">推奨テンポ</span></div><div class="v">80 – 170 BPM</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">타입</span><span class="lang-jp">タイプ</span></div>
+        <div class="v">VCV / Graceful</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">컬러</span><span class="lang-jp">カラー</span></div><div class="v"><span class="sw"><i style="background:#E3F7FF"></i> #E3F7FF</span></div></div>
+      <div class="cell"><div class="k">CV<span class="lang-ko"> / 성우</span></div><div class="v">ねおまる</div></div>
+      <div class="cell"><div class="k"><span class="lang-ko">일러스트</span><span class="lang-jp">イラスト</span></div><div class="v">koronri</div></div>
+    </div>
+
+    <div class="actions">
+      <a class="soc" href="https://x.com/qXoX999p" target="_blank" rel="noopener">TWITTER ↗</a>
+      <a class="soc" href="https://youtu.be/Bl_4EvXYm4w" target="_blank" rel="noopener">YOUTUBE ↗</a>
+      <a class="dl" href="download/Reine_UTAU_ja-vcv.zip" download>DOWNLOAD</a>
+    </div>
+    <div class="fmt">
+      <span class="lang-ko"><b>음원형식</b> 일본어 VCV / 원음설정 <b>@wb4_3</b></span>
+      <span class="lang-jp"><b>音源形式</b> 日本語 VCV / 原音設定 <b>@wb4_3</b></span>
+    </div>
+    <div class="fmt note">
+      <span class="lang-ko"><b>NOTE</b> 어떤 샘플러에서도 잘 작동합니다.</span>
+      <span class="lang-jp"><b>NOTE</b> どのサンプラーでも問題なく動作します。</span>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="n">Xo<b>X</b> · UNIT_02</div>
+  <div class="c">Reine 零音 レイネ &nbsp;/&nbsp; CV. ねおまる · Illust. koronri</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
